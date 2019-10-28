@@ -57,47 +57,44 @@
 </nav>
 
 <div class="container text-left">
-  
   <div class="text text-center">
     <h1> <b> Register </b> </h1> 
   </div>
 
-  <div class="control-group">
-      <label class="control-label"  for="username">Name</label>
+<form class="form-horizontal" action="register_action.php" method="POST">
+  <div class="form-group">
+      <label class="control-label"  for="username">Username</label>
       <div class="controls">
-        <input type="text" id="username" style="width:100%" name="name" placeholder="" class="input-xlarge">
+        <input type="text" id="username" style="width:100%" name="username" placeholder="" class="input-xlarge form-control" value="{$username}" required>
       </div>
     </div>
  
-    <div class="control-group">
+    <div class="form-group">
       <label class="control-label" for="email">Email</label>
       <div class="controls">
-        <input type="text" id="email" style="width:100%" name="email" placeholder="" class="input-xlarge">
+        <input type="text" id="email" style="width:100%" name="email" placeholder="" class="input-xlarge form-control" value="{$email}" required>
       </div>
     </div>
  
-    <div class="control-group">
+    <div class="form-group">
       <label class="control-label" for="password">Password</label>
       <div class="controls">
-        <input type="password" id="password" style="width:100%" name="password" placeholder="" class="input-xlarge">
+        <input type="password" id="password" style="width:100%" name="password" placeholder="" class="input-xlarge form-control" required>
       </div>
     </div>
  
-    <div class="control-group">
+    <div class="form-group">
       <label class="control-label"  for="password_confirm">Password confirmation</label>
       <div class="controls">
-        <input type="password" id="password_confirm" style="width:100%" name="password_confirmation" placeholder="" class="input-xlarge">
+        <input type="password" id="password_confirm" style="width:100%" name="password_confirmation" placeholder="" class="input-xlarge form-control" required>
       </div>
     </div>
-   
-  <div class="text text-center">
-     <div class="control-group">
-      <div class="controls">
-        <button class="btn btn-danger">Go</button>
-        <button class="btn btn-dark">Clear</button>
-      </div>
+
+    <div class="form-group">
+      <button type="submit" name="submit" class="btn btn-danger"> Go</button>
+      <button type="reset" name="reset" class="btn btn-default"> Clear</button>
     </div>
-  </div>
+</form>
 
 </div>
 </div>
