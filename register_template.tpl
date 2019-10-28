@@ -56,6 +56,12 @@
   </div>
 </nav>
 
+{if $erro == true }
+  <div class="alert alert-danger">
+    <p style="text-align: left">{$message}</p>
+  </div>
+{/if}
+
 <div class="container text-left">
   <div class="text text-center">
     <h1> <b> Register </b> </h1> 
@@ -90,7 +96,7 @@
       </div>
     </div>
 
-    <div class="form-group">
+    <div class="form-group text-center">
       <button type="submit" name="submit" class="btn btn-danger"> Go</button>
       <button type="reset" name="reset" class="btn btn-default"> Clear</button>
     </div>
