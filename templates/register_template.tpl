@@ -85,14 +85,14 @@
     <div class="form-group">
       <label class="control-label" for="password">Password</label>
       <div class="controls">
-        <input type="password" id="password" style="width:100%" name="password" placeholder="" class="input-xlarge form-control" required>
+        <input type="password" id="password" style="width:100%" name="password" placeholder="" class="input-xlarge form-control" value="{$password}" required>
       </div>
     </div>
  
     <div class="form-group">
       <label class="control-label"  for="password_confirm">Password confirmation</label>
       <div class="controls">
-        <input type="password" id="password_confirm" style="width:100%" name="password_confirmation" placeholder="" class="input-xlarge form-control" required>
+        <input type="password" id="password_confirm" style="width:100%" name="password_confirm" placeholder="" class="input-xlarge form-control" value="{$password_confirm}" required>
       </div>
     </div>
 
