@@ -56,9 +56,9 @@
   </div>
 </nav>
 
-{if $erro == true }
+{if $isError == true }
   <div class="alert alert-danger">
-    <p style="text-align: left">{$message}</p>
+    <p style="text-align: left">{$Error}</p>
   </div>
 {/if}
 
